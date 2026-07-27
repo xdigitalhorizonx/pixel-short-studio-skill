@@ -9,11 +9,10 @@ venv/
 *.wav
 *.mp3
 
-# team-kill-quota ships as a worked example: its short.json, renderer,
-# shot chart and style contract are tracked. Its art, renders and QA frames
-# are franchise-derived / third-party — see that project's ATTRIBUTION.md.
-# Do not publish them.
-skills/pixel-short-studio/team-kill-quota/assets/
+# team-kill-quota ships as a worked example: its sprites, background,
+# renderer, config and docs are tracked. Its renders, QA frames and raw
+# source generations are not — and source/audio holds third-party music.
+# See that project's ATTRIBUTION.md before reusing anything under it.
 skills/pixel-short-studio/team-kill-quota/frames/
 skills/pixel-short-studio/team-kill-quota/output/
 skills/pixel-short-studio/team-kill-quota/source/

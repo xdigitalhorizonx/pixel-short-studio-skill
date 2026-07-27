@@ -74,17 +74,22 @@ skills/pixel-short-studio/
 
 ## The worked example
 
-`team-kill-quota/` is a real short produced with this skill. Its `short.json`, `render_short.py`,
-`prepare_assets.py`, shot chart, and style contract are tracked here as a reference for how a
-finished project is actually structured.
+`team-kill-quota/` is a real short produced with this skill — a reference for how a finished project
+is actually structured. Tracked here: `render_short.py`, `prepare_assets.py`, `short.json`, the shot
+chart, the style contract, and the full sprite set under `assets/` — four operators with 4-frame walk
+cycles, a fall sequence, an aim pose, and the forest background.
 
-Its art, audio, renders, and QA frames are **not** in this repo. That project used franchise-derived
-sprites and a copyrighted game soundtrack — exactly what the skill's own `ATTRIBUTION.md` template
-tells you not to publish. The example is included for its structure, not its media, so it will not
-render as-is without your own assets.
+The sprites are the useful part to study: 32-ish-pixel figures that read entirely through silhouette
+and timing, bottom-center anchored, with no anti-aliasing on any edge.
 
-That constraint is the point: record every non-original source asset in `ATTRIBUTION.md`, and add
-original or cleared audio rather than silently reusing music from a reference project.
+Not tracked: `output/` renders, `frames/` QA captures, and `source/` raw generations. `source/audio/`
+holds two third-party music files, so `render_short.py` will not run end-to-end from a clean clone —
+it resolves `MUSIC_SOURCE` and `DISCORD_LEAVE_SOURCE` under `source/audio/`. Supply your own cleared
+audio and repoint those constants.
+
+That gap is deliberate, and it is the rule the skill enforces: record every non-original source asset
+in `ATTRIBUTION.md`, and add original or cleared audio rather than silently reusing music from a
+reference project.
 
 ## License
 
