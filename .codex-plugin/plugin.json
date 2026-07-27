@@ -1,0 +1,32 @@
+{
+  "name": "pixel-short-studio",
+  "version": "1.0.0",
+  "description": "Turn scripts and shot charts into reproducible, verified pixel-art shorts.",
+  "author": {
+    "name": "Digital Horizon"
+  },
+  "license": "MIT",
+  "keywords": [
+    "pixel-art",
+    "animation",
+    "video",
+    "storyboard",
+    "short-form"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Pixel Short Studio",
+    "shortDescription": "Create verified pixel-art shorts from scripts.",
+    "longDescription": "A repeatable production workflow for translating scripts, shot charts, style references, and sprite animation into polished 15–30 second pixel-art videos.",
+    "developerName": "Digital Horizon",
+    "category": "Creative",
+    "capabilities": [
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Turn this script into a 20-second pixel short.",
+      "Build a shot chart and render a pixel animation.",
+      "Match these game assets in a short-form video."
+    ]
+  }
+}

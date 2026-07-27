@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pixel Short Studio"
+  short_description: "Turn scripts and shot charts into pixel shorts"
+  default_prompt: "Use $pixel-short-studio to turn my script and scene chart into a verified pixel-art short."

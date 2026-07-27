@@ -1,0 +1,231 @@
+{
+  "title": "Untitled Pixel Short",
+  "canvas": [640, 360],
+  "fps": 30,
+  "duration": 15.0,
+  "delivery_scale": 2,
+  "background": "assets/background.png",
+  "output": "output/short.mp4",
+  "characters": {
+    "hero": {
+      "x": 170,
+      "y": 260,
+      "scale": 3,
+      "default_sequence": "idle",
+      "shadow": [22, 4],
+      "sequences": {
+        "idle": {
+          "sheet": "assets/hero-idle.png",
+          "frame_width": 40,
+          "frame_height": 56,
+          "frames": 4,
+          "row": 0,
+          "fps": 7,
+          "flip_x": false
+        },
+        "action": {
+          "sheet": "assets/hero-action.png",
+          "frame_width": 64,
+          "frame_height": 64,
+          "frames": 8,
+          "row": 0,
+          "fps": 10,
+          "flip_x": false
+        }
+      }
+    },
+    "opponent": {
+      "x": 460,
+      "y": 260,
+      "scale": 3,
+      "default_sequence": "idle",
+      "shadow": [30, 4],
+      "sequences": {
+        "idle": {
+          "sheet": "assets/opponent-idle.png",
+          "frame_width": 48,
+          "frame_height": 64,
+          "frames": 4,
+          "row": 0,
+          "fps": 5,
+          "flip_x": false
+        },
+        "reaction": {
+          "sheet": "assets/opponent-reaction.png",
+          "frame_width": 64,
+          "frame_height": 64,
+          "frames": 4,
+          "row": 0,
+          "fps": 8,
+          "flip_x": false
+        }
+      }
+    }
+  },
+  "clips": [
+    {
+      "character": "hero",
+      "sequence": "idle",
+      "start": 0.0,
+      "end": 5.2,
+      "x0": 170,
+      "y0": 260,
+      "x1": 170,
+      "y1": 260,
+      "anchor": "bottom",
+      "ease": "linear",
+      "layer": 10
+    },
+    {
+      "character": "hero",
+      "sequence": "action",
+      "start": 5.2,
+      "end": 8.7,
+      "x0": 170,
+      "y0": 260,
+      "x1": 445,
+      "y1": 155,
+      "arc_height": 95,
+      "rotation_turns": -1.0,
+      "anchor": "center",
+      "ease": "smooth",
+      "layer": 20
+    },
+    {
+      "character": "hero",
+      "sequence": "action",
+      "start": 8.7,
+      "end": 12.0,
+      "x0": 445,
+      "y0": 155,
+      "x1": 360,
+      "y1": 260,
+      "arc_height": 30,
+      "rotation_turns": -0.5,
+      "anchor": "center",
+      "ease": "smooth",
+      "layer": 20
+    },
+    {
+      "character": "hero",
+      "sequence": "idle",
+      "start": 12.0,
+      "end": 15.0,
+      "x0": 360,
+      "y0": 260,
+      "x1": 360,
+      "y1": 260,
+      "anchor": "bottom",
+      "ease": "linear",
+      "layer": 10
+    },
+    {
+      "character": "opponent",
+      "sequence": "idle",
+      "start": 0.0,
+      "end": 8.4,
+      "anchor": "bottom",
+      "layer": 10
+    },
+    {
+      "character": "opponent",
+      "sequence": "reaction",
+      "start": 8.4,
+      "end": 15.0,
+      "x0": 460,
+      "y0": 260,
+      "x1": 540,
+      "y1": 263,
+      "anchor": "bottom",
+      "ease": "out",
+      "layer": 10
+    }
+  ],
+  "effects": [
+    {
+      "type": "dust",
+      "start": 4.5,
+      "end": 5.5,
+      "x0": 170,
+      "y0": 263,
+      "x1": 170,
+      "y1": 263,
+      "amount": 1.0
+    },
+    {
+      "type": "speed_lines",
+      "start": 5.4,
+      "end": 8.5,
+      "x0": 210,
+      "y0": 220,
+      "x1": 440,
+      "y1": 155,
+      "amount": 1.0
+    },
+    {
+      "type": "impact",
+      "time": 8.4,
+      "duration": 0.35,
+      "x": 455,
+      "y": 150,
+      "radius": 30,
+      "shake": 6,
+      "flash": 0.08
+    }
+  ],
+  "texts": [
+    {
+      "text": "FINISH.",
+      "start": 12.8,
+      "end": 15.0,
+      "y": 276,
+      "fade": 0.4,
+      "color": [255, 241, 174],
+      "shadow": [18, 22, 24]
+    }
+  ],
+  "audio": {
+    "chiptune": {
+      "enabled": true,
+      "gain": 0.035,
+      "beat": 0.375,
+      "notes": [164.81, 196.0, 246.94, 293.66, 246.94, 220.0, 196.0, 146.83]
+    },
+    "events": [
+      {
+        "type": "tone",
+        "time": 5.2,
+        "duration": 0.55,
+        "f0": 180,
+        "f1": 620,
+        "gain": 0.13,
+        "wave": "square"
+      },
+      {
+        "type": "noise",
+        "time": 8.4,
+        "duration": 0.32,
+        "gain": 0.38,
+        "decay": 13,
+        "seed": 22
+      },
+      {
+        "type": "tone",
+        "time": 8.4,
+        "duration": 0.4,
+        "f0": 105,
+        "f1": 42,
+        "gain": 0.42,
+        "wave": "sine"
+      },
+      {
+        "type": "noise",
+        "time": 11.8,
+        "duration": 0.18,
+        "gain": 0.16,
+        "decay": 18,
+        "seed": 33
+      }
+    ]
+  }
+}
